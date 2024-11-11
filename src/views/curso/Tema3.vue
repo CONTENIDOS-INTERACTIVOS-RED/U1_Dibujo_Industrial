@@ -139,7 +139,7 @@
           .row.justify-content-center.align-items-center
             .col-lg-auto
               figure
-                img(src='@/assets/bullets/icon-1.svg' alt='')
+                img(src='@/assets/bullets/icon-1.svg' alt='' style="width: 20px;")
             .col-lg
               p.mb-0(v-html="item.text")
         .bg-color-4.p-4.mt-4
