@@ -41,7 +41,7 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Componentes de una cultura de paz',
+            titulo: 'Fundamentos de Dibujo Técnico',
             hash: 't_1_1',
           },
         ],
@@ -51,14 +51,32 @@ export default {
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
         numero: '2.',
-        titulo: 'Tipos o niveles de conflicto',
+        titulo: 'Conceptos básicos de dibujo técnico',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: 'Factores desencadenantes de los conflictos',
+            titulo: 'Uso de escalas y proporciones',
             hash: 't_2_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.2',
+            titulo: 'Incluir información sobre materiales y procesos',
+            hash: 't_2_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.3',
+            titulo: 'Aplicaciones del dibujo técnico',
+            hash: 't_2_3',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.4',
+            titulo: 'Herramientas y software',
+            hash: 't_2_4',
           },
         ],
       },
@@ -73,15 +91,32 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '3.1',
-            titulo: 'Dinámicas de poder en los conflictos',
+            titulo: 'Tipos de líneas',
             hash: 't_3_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '3.2',
-            titulo:
-              'Interrelación entre factores estructurales y dinámicas de poder',
+            titulo: 'Proyecciones ortogonales',
             hash: 't_3_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.3',
+            titulo: 'Vistas principales',
+            hash: 't_3_3',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.4',
+            titulo: 'Organización de las vistas',
+            hash: 't_3_4',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.5',
+            titulo: 'Dimensiones y cotas',
+            hash: 't_3_5',
           },
         ],
       },
@@ -135,70 +170,81 @@ export default {
   },
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia: 'Méndez, G. (2017). Dibujo Técnico.',
+      link:
+        'https://teoriadeldibujotecnico.wordpress.com/2017/08/09/vistas-de-un-objeto/',
+    },
+    {
+      referencia:
+        'Universidad Nacional de San Juan. (2020). Dibujo y sistemas de representación. ',
+      link:
+        'https://dibujoysistemas.fi.unsj.edu.ar/wp-content/uploads/08-UVIII-VISTAS-AUXILIARES-CIV-2020.pdf',
     },
   ],
   glosario: [
     {
-      termino: 'Conflicto comunitario',
+      termino: 'Comunicación',
       significado:
-        '"Son los que surgen cuando diferentes grupos o individuos dentro de una comunidad tienen intereses contrapuestos, generalmente relacionados con el acceso a recursos o decisiones colectivas que afectan a toda la comunidad." (Lederach, 2003).',
+        'proceso de transmitir ideas y diseños de manera clara y precisa.',
     },
     {
-      termino: 'Conflicto estructural',
+      termino: 'Dibujo técnico',
       significado:
-        '"Es el conflicto que surge a partir de las desigualdades sistémicas dentro de una sociedad, ya sea en términos económicos, sociales o políticos. Estas desigualdades perpetúan la injusticia y marginación de ciertos grupos." (Galtung, 1996).',
+        'representación gráfica de objetos, sistemas y estructuras, utilizada para comunicar información precisa en ingeniería y otras disciplinas técnicas.',
     },
     {
-      termino: 'Conflicto interpersonal',
+      termino: 'Escalas',
       significado:
-        '"Es el enfrentamiento que se presenta entre dos o más personas debido a discrepancias en valores, creencias o expectativas, lo cual puede generar tensiones y malentendidos." (Fisher, Ury, Patton, 2011).',
+        'relaciones proporcionales entre las dimensiones de un objeto real y su representación en un dibujo.',
     },
     {
-      termino: 'Conflicto intrapersonal',
+      termino: 'Línea continua',
       significado:
-        '"Es el conflicto que ocurre dentro de una persona, cuando sus deseos, valores o creencias están en contradicción, lo que genera tensión y estrés interno." (Galtung, 1996).',
+        'tipo de línea que representa contornos visibles de objetos.',
     },
     {
-      termino: 'Cultura de paz',
+      termino: 'Línea de Cota',
       significado:
-        '"Conjunto de valores, actitudes y comportamientos que rechazan la violencia y previenen los conflictos, abordando sus causas para resolverlos mediante el diálogo y la negociación". (UNESCO, 1995).',
+        'línea que muestra medidas y dimensiones, incluyendo flechas y textos explicativos.',
     },
     {
-      termino: 'Dinámicas de poder',
-      significado:
-        '“Son la forma en que se distribuye y utiliza el poder dentro de una sociedad o grupo. Quienes controlan los recursos y las decisiones suelen tener más poder, mientras que otros se ven subordinados o excluidos." (Lederach, 2003).',
+      termino: 'Línea discontinua',
+      significado: 'línea que indica contornos invisibles o bordes ocultos.',
     },
     {
-      termino: 'Exclusión social',
+      termino: 'Normas ISO',
       significado:
-        '"La exclusión social ocurre cuando ciertos grupos de la sociedad son marginados y se les niega el acceso equitativo a los recursos, derechos y oportunidades, perpetuando la desigualdad." (Martínez, 2001)',
+        'conjunto de estándares internacionales que regulan la representación y calidad en el dibujo técnico.',
     },
     {
-      termino: 'Factores desencadenantes',
+      termino: 'Precisión',
       significado:
-        '"Son de los conflictos pueden ser sociales, económicos, políticos o culturales, y actúan como causas inmediatas que provocan tensiones o enfrentamientos entre los actores implicados". (Freire, 2000)',
+        'grado en el que las dimensiones y detalles de un dibujo son exactos y sin errores.',
     },
     {
-      termino: 'Mediación',
+      termino: 'Proporciones',
       significado:
-        '“Proceso de resolución de conflictos en el que un tercero neutral ayuda a las partes a alcanzar un acuerdo mediante el diálogo y la cooperación." (Fisher, Ury, Patton, 2011).',
+        'relación entre las dimensiones de diferentes partes de un objeto para asegurar coherencia en el diseño.',
     },
     {
-      termino: 'Paz negativa',
+      termino: 'Proyecciones auxiliares',
       significado:
-        '“Se refiere a la ausencia de violencia directa o física, sin abordar las causas estructurales que pueden seguir perpetuando el conflicto a nivel más profundo." (Galtung, 1996).',
+        'vistas adicionales utilizadas para mostrar características que no son evidentes en las vistas principales.',
     },
     {
-      termino: 'Paz positiva',
+      termino: 'Proyecciones ortogonales',
       significado:
-        '“se refiere a la construcción de una sociedad donde las estructuras promuevan la justicia, la igualdad y el bienestar para todos los individuos, más allá de la mera ausencia de violencia." (Galtung, 1996).',
+        'método de representación gráfica que muestra un objeto en varias vistas bidimensionales, manteniendo las dimensiones reales.',
     },
     {
-      termino: 'Violencia estructural',
+      termino: 'Símbolos estandarizados',
       significado:
-        'Es la violencia que se manifiesta cuando las instituciones y estructuras sociales perpetúan la exclusión, la desigualdad y la injusticia, generando tensiones y conflictos que no se resuelven con la mera ausencia de violencia física." (Galtung, 1996).',
+        'representaciones gráficas convencionales que facilitan la interpretación universal de los planos.',
+    },
+    {
+      termino: 'Software CAD',
+      significado:
+        'programas de diseño asistido por computadora utilizados para crear y modificar dibujos técnicos',
     },
   ],
   complementario: [

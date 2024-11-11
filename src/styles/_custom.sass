@@ -9,15 +9,19 @@
 .brounded
   border-radius: 16px !important
 
+.brounded-sm
+  border-radius: 8px !important
+
 .bg-color
   &-1
-    background-color: #E3F4F5
+    background-color: #EDFEFA
   &-2
-    background-color: #FFF8D5
+    background-color: #FEEDEB
   &-3
-    background-color: #FEF6E9
+    background-color: #FDF9F3
   &-4
-    background-color: #E3F4F5
+    background-color: #E6F0F6
+
   &-5
     background-color: #FFFBE8
   &-6
@@ -31,6 +35,8 @@
   &-white
     background-color: #fff
 
+.border-top.color-primario
+  border-top: 5px solid $color-primario !important
 
 // Full Width Background
 .bg-full-width
@@ -51,6 +57,9 @@
     background-position: bottom
   &-3
     background-image: url("../assets/bg/bg3.png") !important
+    background-position: bottom
+  &-slider
+    background-image: url("../assets/bg/bg-slider.png") !important
     background-position: bottom
 
 // Variables
@@ -89,13 +98,13 @@ $custom-card-img-height: 322px
     object-fit: cover
 
 .acordion__header
-  background-color: #FEF6E9 !important
+  background-color: #E6F0F6 !important
 
 .acordion__header--active
-  background-color: $color-acento-contenido !important
+  background-color: #5CFBD4 !important
 
 .acordion__contenido
-  background-color: #FEE6BF !important
+  background-color: #EDFEFA !important
 
 
 .anexo__texto
@@ -127,6 +136,7 @@ $custom-card-img-height: 322px
 
 .box-shadow
   box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+  border: 2px solid rgba(0,0,0,0.1)
 
 .shadow
   &-soft
@@ -145,7 +155,7 @@ $custom-card-img-height: 322px
   inline-size: auto
 
 .tabs-content
-  background-color: $color-sistema-h
+  background-color: #FDF9F3
 
 .material-complementario
   padding-top: 3rem

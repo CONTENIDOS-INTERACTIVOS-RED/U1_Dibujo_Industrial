@@ -47,6 +47,7 @@ export default {
     display: flex
     flex-direction: column
     margin-left: 20px
+
     h3
       color: #4E4948 !important
       font-size: 18px
@@ -57,6 +58,7 @@ export default {
       color: #212429 !important
       font-size: 38px
       font-weight: 900
+      text-transform: uppercase
     &__icono
       display: block
       width: 32px

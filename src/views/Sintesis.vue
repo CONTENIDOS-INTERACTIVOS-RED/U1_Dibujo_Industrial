@@ -1,8 +1,8 @@
 <template lang="pug">
 .curso-main-container.creditos-vista
-  BannerInterno(:titulo="'FUNDAMENTACIÓN JURÍDICA - unidad 1'" :subTitulo="'SÍNTESIS'")
+  BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'SÍNTESIS'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p.mb-4.mb-md-5 La unidad I:  Introducción al derecho y sus fuentes, establece los fundamentos teóricos esenciales para comprender el origen de las normas jurídicas y su aplicación. 
+    p.mb-4.mb-md-5 Esta unidad presenta los conceptos básicos del dibujo técnico, una herramienta fundamental para comunicar y documentar proyectos en ingeniería y diseño. Se exploran elementos esenciales como tipos de líneas, proyecciones, escalas y normas internacionales (ISO, ANSI, DIN) que garantizan precisión y coherencia en la representación gráfica de objetos y sistemas.
     figure
       img(src='@/assets/componentes/sintesis-test.png', alt='Texto que describa la imagen')
     

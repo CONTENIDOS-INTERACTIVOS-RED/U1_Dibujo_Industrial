@@ -1,121 +1,156 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'Unidad 1. Introducción a la Paz y Resolución de Conflictos: Causas y Dinámicas del Conflicto'" :subTitulo="'3. FACTORES ESTRUCTURALES Y DINÁMICAS DE PODER'")
+  BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'3.Tipos de líneas, proyecciones ortogonales y escalas'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    p(data-aos="fade-up").mb-5 #[strong Los factores estructurales y las dinámicas de poder], son aspectos cruciales que influyen en el surgimiento y desarrollo de estos a largo plazo. Estos factores no solo reflejan las desigualdades presentes en las estructuras sociales, políticas y económicas de una sociedad, sino que también determinan la capacidad de los grupos para acceder a los recursos y tomar decisiones en su entorno. Los conflictos estructurales están profundamente arraigados en sistemas que se unen a la violencia estructural, una forma de opresión que genera exclusión y desigualdad, lo que lleva a que estos duren y sean difíciles de resolver (Galtung, 1996).
-
-    .bg-full-width.bg-color-7.p-4.mb-5
-      .px-4.p-md-5
-        .row.justify-content-center
-          .col-lg-10
-            ImagenInfografica.color-acento-contenido
-              template(v-slot:imagen)
-                figure
-                  img(src='@/assets/curso/tema3/info1.png', alt='', style="max-width: 840px;").mx-auto
-
-              .bg-color-1.p-3(x="55%" y="9%" numero="+")
-                p #[strong Los factores estructurales] se refieren a las condiciones sistémicas que crean y perpetúan la desigualdad en una sociedad. Estos factores están presentes en las instituciones económicas, políticas y sociales, que afectan la distribución de recursos y oportunidades entre los distintos grupos. Los enfrentamientos estructurales surgen cuando estas desigualdades se vuelven insostenibles, dado que ciertos grupos no tienen acceso a los mismos derechos o recursos que otros.
-
-              .bg-color-1.p-3(x="46%" y="32%" numero="+")
-                p La distribución desigual de la riqueza y los recursos, es una de las principales causas de los conflictos estructurales. En muchas sociedades, la disparidad entre ricos y pobres genera tensiones que, si no se resuelven, pueden conducir a la desestabilización social. Por ejemplo, las altas tasas de pobreza en comunidades marginadas pueden provocar protestas y movilizaciones sociales, cuando estas comunidades sienten que sus necesidades no son atendidas por el sistema económico dominante.
-
-              .bg-color-1.p-3(x="55%" y="50%" numero="+")
-                p Los factores estructurales también incluyen el acceso desigual a servicios básicos como la educación y la salud. Cuando ciertos grupos tienen acceso limitado a estos servicios, se perennizan ciclos de pobreza y marginación. Esta falta de oportunidades genera malestar social y puede alimentar movimientos sociales que exigen una distribución más justa de los recursos.
-
-              .bg-color-1.p-3(x="46%" y="69%" numero="+")
-                p Cuando ciertos grupos son apartados de la toma de decisiones, se produce una exclusión política que puede generar tensiones profundas en la sociedad. Esta exclusión no es solo una cuestión de derechos abstractos; afecta de manera concreta la vida de las personas. Imagina que una parte de la población no tiene voz en el sistema político, sus preocupaciones no son escuchadas ni representadas, lo que crea un fuerte descontento. En este tipo de situaciones, es fácil que surjan movimientos de resistencia, o incluso violencia, como reacción ante una estructura que parece ignorarlos. Esto es particularmente evidente en regímenes autoritarios o en sistemas políticos que marginan a ciertos grupos étnicos o religiosos, en el que la falta de participación puede ser un detonante de conflictos.
-
-              .bg-color-1.p-3(x="55%" y="90%" numero="+")
-                p En muchas zonas rurales de distintos países, las comunidades tienen acceso limitado o casi nulo, a servicios básicos como la educación o la salud. Como resultado, el ciclo de pobreza se perpetúa, cerrando cada vez más las puertas al desarrollo. En estas situaciones, no solo se siente una exclusión en términos de servicios, sino también una exclusión política, ya que estas comunidades a menudo no tienen representantes que aboguen por sus necesidades. Este sentimiento de abandono por parte del Estado, puede generar malestar social. Las personas, frustradas por esta desigualdad, podrían organizarse y protestar para exigir cambios en las políticas públicas que garanticen una mejora en sus condiciones de vida.
-
-    h2(data-aos="fade-up")#t_3_1 Dinámicas de poder en los conflictos
-    p(data-aos="fade-up") Las dinámicas de poder juegan un papel fundamental en la evolución de las diferentes tensiones. El poder se refiere a la capacidad de un individuo o grupo, para influir en las decisiones que afectan a otros. En los conflictos, las dinámicas de poder determinan qué grupos controlan los recursos y quién tiene voz en los procesos de toma de decisiones. Según Lederach (2003), la forma en que se distribuye el poder en una sociedad, tiene un impacto directo en la aparición y perpetuación de estos.
-
-    p(data-aos="fade-up").mb-3 Estas dinámicas son:
-
-    TabsC.color-primario.mb-5
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Concentración del poder" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
-        .row
-          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Concentración del poder
-            p Cuando el poder está concentrado en manos de unos pocos, los grupos que carecen de poder se sienten excluidos y oprimidos. Esta concentración del poder económico, político o social, crea desequilibrios que desencadenan choques, porque los grupos marginados buscan recuperar su capacidad de decisión o acceso a los recursos.
-        
-          .col-md-6.col-lg-5.col-xl-4
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema3/1.png', alt='')
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Relaciones de dominación y subordinación" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
-        .row
-          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Relaciones de dominación y subordinación
-            p Las relaciones de poder, se estructuran de manera jerárquica, con un grupo dominante que ejerce control sobre los recursos y las decisiones, y un grupo subordinado que carece.
-        
-          .col-md-6.col-lg-5.col-xl-4
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema3/2.png', alt='')
-
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Manipulación del poder político" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
-        .row
-          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Manipulación del poder político
-            p Con frecuencia, las élites políticas utilizan su posición para manipular el poder en su beneficio, dejando a la sociedad en una posición de vulnerabilidad. 
-            p Esto puede manifestarse desde la corrupción hasta el control de los medios de comunicación o la represión de cualquier oposición. 
-            p Cuando los ciudadanos empiezan a notar que quienes ostentan el poder lo están usando para su propio beneficio, y no para el bien común, las tensiones inevitablemente aumentan.         
-          .col-md-6.col-lg-5.col-xl-4
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema3/3.png', alt='')
-
-    .bg-color-6.mb-5(data-aos="fade-up")
-      .row.justify-content-center.align-items-center
-        .col-lg-auto
-          figure
-            img(src='@/assets/curso/tema3/4.png', alt='')
-        .col-lg
-          .p-4.pe-5
-            p.mb-0 #[strong Ejemplo:] imaginemos que trabajamos en una empresa donde las decisiones importantes las toma únicamente la dirección, sin consultar a los empleados. Esta falta de participación genera frustración entre los trabajadores, quienes sienten que sus opiniones no son valoradas ni consideradas. A largo plazo, este malestar puede escalar en forma de huelgas o protestas, porque los empleados demandan no solo mejores condiciones laborales, sino también mayor participación en las decisiones que afectan su día a día. Lo que inicialmente era una cuestión interna de poder, termina por convertirse en un conflicto abierto donde el diálogo y la negociación, son las claves para resolverlo.
-      
-    h2(data-aos="fade-up")#t_3_2 Interrelación entre factores estructurales y dinámicas de poder
-
-    p(data-aos="fade-up").mb-5 En toda sociedad, los factores estructurales y las dinámicas de poder están profundamente entrelazados. Frecuentemente, los sistemas de poder existentes perpetúan las desigualdades que ya están arraigadas en las estructuras sociales, políticas y económicas. Cuando una élite tiene un control significativo sobre los recursos y la toma de decisiones, es mucho más difícil que se produzcan los cambios necesarios para corregir esas desigualdades. Esto crea un círculo vicioso en el que las mismas estructuras que generan la desigualdad continúan intactas, reforzando y perpetuando los conflictos estructurales.
+    p(data-aos="fade-up").mb-5 En el dibujo técnico, los tipos de líneas definen bordes, ejes y detalles ocultos. Las proyecciones ortogonales descomponen un objeto en vistas (frontal, lateral y superior), mientras que las escalas ajustan el tamaño del dibujo al formato, manteniendo la proporción con las dimensiones reales del objeto.
 
 
-    .bg-color-6.mb-5(data-aos="fade-left")
-      .row.justify-content-center.align-items-center
-        .col-lg
-          .p-4
-            p.mb-0(data-aos="fade-up") #[strong Ejemplo:] en algunos países, las élites políticas y económicas, controlan la mayor parte de los recursos y las decisiones importantes. En estas sociedades, las comunidades marginadas suelen encontrarse excluidas del proceso político y, por ende, del acceso a oportunidades económicas. Estas comunidades no solo luchan por acceder a recursos, sino que además enfrentan barreras constantes para participar en la toma de decisiones que podrían mejorar sus condiciones. A medida que esta exclusión continúa, el malestar social crece y las tensiones se vuelven recurrentes, debido a que las desigualdades que alimentan esos choques, permanecen sin cambios.
-        .col-lg-auto
-          figure
-            img(src='@/assets/curso/tema3/5.png', alt='')
+    .bg-full-width.bg-fondo-2.mb-5
+      .px-4.px-md-5.pb-md-5
+        h2(data-aos="fade-up")#t_3_1 Tipos de líneas
 
-    h2(data-aos="fade-up") Conclusión de la unidad
+        p(data-aos="fade-up").mb-5 #[strong Según la NTC 1777], que establece normas para el dibujo técnico en Colombia, se definen varios tipos de líneas que deben usarse en un plano técnico. A continuación, encontramos los principales tipos de líneas y sus usos específicos:
 
-    p(data-aos="fade-up").mb-5 Al llegar al final de esta primera unidad, hemos logrado sentar una base sólida para comprender los conflictos sociales y las dinámicas que los generan, tanto desde una perspectiva teórica como práctica, por medio de los ejemplos y casos expuestos. A lo largo del proceso, exploramos sobre los conceptos fundamentales de paz, diferenciando entre la paz negativa y la paz positiva (Galtung, 1996). A través de esta distinción, se ha podido reflexionar sobre cómo la ausencia de violencia no es suficiente para garantizar una sociedad justa y equitativa, sino que es necesario crear estructuras que promuevan el bienestar y la justicia social.
+        .row.justify-content-center.align-items-center
+          .col-lg-12
+            SlyderF(columnas="col-12 col-lg-6 col-xl-4")
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/1.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea continua
+                p.text-center Contornos visibles de objetos, la línea más común en los dibujos técnicos. Ejemplo: bordes y límites de piezas.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/2.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea discontinua (o de trazo y espacio)
+                p.text-center Contornos invisibles o bordes ocultos. Ejemplo: bordes de piezas que no son visibles desde la vista actual.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/3.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de centro
+                p.text-center Indica ejes de simetría y centros de círculos. Ejemplo: ejes de rotación.
 
-    .row.justify-content-center.align-items-stretch.mb-5
-      .col-lg-8
-        .bg-color-1.p-4.h-100(data-aos="fade-right")
-          .row.justify-content-start.align-items-start
-            .col-auto
-              figure
-                img(src='@/assets/curso/tema3/6.svg', alt='')
-            .col
-              p.mb-0 También se ha explorado la cultura de paz y su importancia en nuestras vidas cotidianas. La paz no es solo evitar enfrentamientos, sino aprender a convivir mediante el diálogo y el respeto mutuo (UNESCO, 1995). Con esta base, será más fácil reconocer las causas de los conflictos estructurales, como la injusticia y la exclusión, y pensar en cómo abordar estos problemas en la comunidad o entorno profesional.
-
-      .col-lg-4
-        figure(data-aos="zoom-in")
-          img(src='@/assets/curso/tema3/7.png', alt='')
-
-    p(data-aos="fade-up").mb-5 A lo largo de esta unidad, se ha sumergido en los distintos tipos y niveles de conflicto, desde los más internos, como los intrapersonales, hasta aquellos que afectan a toda una comunidad o sociedad. Ha aprendido que cada uno tiene sus propias particularidades y requiere diferentes enfoques para ser gestionado, algo que probablemente ya se habrá notado al analizar ejemplos concretos de nuestra vida diaria.
+    h2(data-aos="fade-up")#t_3_2 Proyecciones ortogonales
 
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4
-        figure(data-aos="zoom-in")
-          img(src='@/assets/curso/tema3/8.png', alt='')
-      .col-lg-8
-        p(data-aos="fade-up") La exclusión política, la manipulación del poder y las tensiones en los recursos compartidos, son situaciones que, como hemos visto, alimentan las disputas estructurales. Entender estas dinámicas nos ayudará a ver los choques, no solo como eventos aislados, sino como parte de un sistema más amplio que requiere cambios profundos para generar una resolución pacífica y sostenible.
+      .col-lg-7
+        p(data-aos="fade-up") Las proyecciones ortogonales son un método de representación gráfica empleado en el dibujo técnico para mostrar un objeto desde diferentes vistas bidimensionales. Este método es fundamental en la ingeniería y el diseño, ya que facilita la representación precisa de la forma y dimensiones de un objeto.
+        .bg-color-2.p-4.mb-4(data-aos="fade-up")
+          p.mb-0 Las proyecciones ortogonales son representaciones de un objeto en las que las líneas de proyección son perpendiculares a los planos de proyección. Esto garantiza que las dimensiones y proporciones del objeto se mantengan exactas, evitando distorsiones en las vistas.
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema3/4.png', alt='')
 
-        p(data-aos="fade-up").mb-0 Además, las actividades realizadas, como el storytelling y el análisis de casos, ha brindado la oportunidad de aplicar estos conceptos de manera práctica. No solo se ha enfocado en el aspecto teórico, sino que también ha comenzado a desarrollar habilidades claves, como la escucha activa y la mediación, fundamentales para gestionar estos de manera efectiva.
+    
+    h2(data-aos="fade-up")#t_3_3 Vistas principales
+
+    p(data-aos="fade-up") Generalmente, se emplean tres vistas principales en las proyecciones ortogonales:
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-6
+        .titulo-figura.mb-2
+          h5 Figura 1. 
+          span Vistas de un objeto  
+        figure
+          img(src='@/assets/curso/tema3/5.png', alt='') 
+          figcaption Nota. #[span Tomado de Méndez, G. (2017)]
+      .col-lg-6
+        ol.lista-ol--cuadro.mt-5
+          li 
+            .lista-ol--cuadro__vineta
+              span A
+            | #[strong Vista de frente o alzado]: muestra la altura y el ancho del objeto. Es la vista más comúnmente utilizada.
+          li 
+            .lista-ol--cuadro__vineta
+              span B
+            | #[strong Vista superior o planta]: muestra el ancho y la profundidad del objeto, desde arriba.
+          li 
+            .lista-ol--cuadro__vineta
+              span C
+            | #[strong Vista derecha o lateral derecha]: muestra la altura y la profundidad del objeto desde un lado
+          li 
+            .lista-ol--cuadro__vineta
+              span D
+            | #[strong Vista izquierda o lateral izquierda]: muestra la altura y la profundidad del objeto desde un lado
+          li 
+            .lista-ol--cuadro__vineta
+              span E
+            | #[strong Vista inferior]: muestra el ancho y la profundidad del objeto, desde abajo.
+          li 
+            .lista-ol--cuadro__vineta
+              span F
+            | #[strong Vista posterior]: muestra la altura y el ancho del objeto, desde atrás. 
+
+
+    h2(data-aos="fade-up")#t_3_4 Organización de las vistas
+
+    p(data-aos="fade-up") #[strong Las normas ISO (Organización Internacional de Normalización)] que son esenciales en el dibujo técnico, indican que #[strong ISO-A] e #[strong ISO-E] se refieren a diferentes métodos de proyección utilizados en los dibujos técnicos de la siguiente manera:
+
+
+    TabsC.color-acento-contenido.mb-5
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Sistema Americano ISO-A" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
+        .row
+          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
+            h4 Sistema Americano ISO-A
+            p Conocido como el método de proyección del tercer ángulo, es más común en América del Norte. Aquí, el plano de proyección se coloca entre el observador y el objeto
+        
+          .col-md-6.col-lg-5.col-xl-4
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema3/6.png', alt='')
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Sistema Europeo ISO-E" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
+        .row
+          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
+            h4 Sistema Europeo ISO-E
+            p También conocido como el método de proyección del primer ángulo, es comúnmente utilizado en Europa y Asia. En este método, el objeto se coloca entre el observador y el plano de proyección.
+        
+          .col-md-6.col-lg-5.col-xl-4
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema3/7.png', alt='')
+
+
+    h2(data-aos="fade-up")#t_3_5 Dimensiones y cotas
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        .bg-color-1.p-4
+          .row.justify-content-center.align-items-center
+            .col-lg-auto
+              figure
+                img(src='@/assets/curso/tema3/8.svg', alt='')
+            .col-lg
+              p.mb-0 Las proyecciones ortogonales incluyen cotas y dimensiones para especificar medidas críticas, como longitud, ancho, altura y diámetros. Esto es esencial para la fabricación y el ensamblaje.
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema3/9.png', alt='')
+
+    h2(data-aos="fade-up")#t_3_6 Proyecciones auxiliares
+
+    p(data-aos="fade-up") Además de las vistas principales, pueden crearse proyecciones auxiliares para representar ángulos o características que no se pueden mostrar claramente en las vistas estándar.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-6
+        .titulo-figura.mb-2
+          h5 Figura 2. 
+          span Plano auxiliar
+        figure
+          img(src='@/assets/curso/tema3/5.png', alt='') 
+          figcaption #[strong Nota]. #[span Tomado de Universidad Nacional de San Juan. (2020).]
+      .col-lg-6
+        p.mb-4 Las ventajas de las proyecciones ortogonales son: 
+        .bg-color-3.p-4.mb-2(v-for="item in items" :key="item.text" data-aos="fade-up")
+          .row.justify-content-center.align-items-center
+            .col-lg-auto
+              figure
+                img(src='@/assets/bullets/icon-1.svg' alt='')
+            .col-lg
+              p.mb-0(v-html="item.text")
+        .bg-color-4.p-4.mt-4
+          h5 Ejemplo práctico
+          p Para conocer sobre la aplicación de proyecciones ortogonales lo invitamos a consultar el PDF ejemplo práctico.
+          a.anexo.bg-white.w-fit(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")(data-aos="flip-up")
+              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
+                img(src="@/assets/template/icono-pdf.svg")
+              .anexo__texto
+                p <strong>Anexo. </strong> Ejemplo práctico
+
 
     .row.material-complementario
       h2 MATERIAL COMPLEMENTARIO
@@ -144,6 +179,24 @@ export default {
   name: 'Tema3',
   components: {
     BannerInterno,
+  },
+  data() {
+    return {
+      items: [
+        {
+          text:
+            '<b>Claridad.</b> Permiten una comprensión clara de la geometría del objeto.',
+        },
+        {
+          text:
+            '<b>Precisión.</b> Mantienen las dimensiones reales, evitando distorsiones.',
+        },
+        {
+          text:
+            '<b>Estándar.</b> Facilitan la comunicación entre ingenieros, arquitectos y fabricantes.',
+        },
+      ],
+    }
   },
   mounted() {
     this.$nextTick(() => {

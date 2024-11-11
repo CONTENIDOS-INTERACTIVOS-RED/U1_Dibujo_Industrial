@@ -1,136 +1,234 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'Unidad 1. Introducción a la Paz y Resolución de Conflictos: Causas y Dinámicas del Conflicto'" :subTitulo="'2. TIPOS O NIVELESDE CONFLICTO'")
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    .bg-full-width.bg-fondo-2
-      .px-4.px-md-5.pb-md-3
-        p(data-aos="fade-up") El análisis de los tipos y niveles de conflicto, resulta esencial para comprender la diversidad de situaciones que pueden surgir en diferentes contextos sociales. Los conflictos no son simples ni uniformes; cada uno tiene sus particularidades, dependiendo tanto de su origen como del entorno en el que se desarrolla. Por eso, entender las diferencias entre los diversos tipos y niveles, es clave para poder abordarlos de manera adecuada. 
+  BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'2. Conceptos básicos de dibujo técnico'")
+  .container.tarjeta.tarjeta--blanca.px-4.pt-4.px-md-5.pt-md-5.pb-0
 
-        p(data-aos="fade-up") Por lo tanto, nos enfocaremos en cuatro niveles principales de conflicto: 
-
-
-        .row.justify-content-center.align-items-stretch.mb-5
-          .col-lg-6.col-xl-3.mb-4(data-aos="zoom-in-up")
-            .custom-image-card-2.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/1.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Nivel 1
-                p.mb-0 El intrapersonal, que se da en el interior de cada persona. 
-          .col-lg-6.col-xl-3.mb-4(data-aos="zoom-in-down")
-            .custom-image-card-2.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/2.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Nivel 2
-                p.mb-0 El interpersonal, que ocurre entre dos o más individuos. 
-          .col-lg-6.col-xl-3.mb-4(data-aos="zoom-in-down")
-            .custom-image-card-2.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/3.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Nivel 3
-                p.mb-0 El comunitario, que involucra a grupos dentro de una sociedad.
-          .col-lg-6.col-xl-3.mb-4(data-aos="zoom-in-down")
-            .custom-image-card-2.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/4.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Nivel 4
-                p.mb-0 El estructural, que refleja desigualdades más profundas en la sociedad.
+    .bg-color-1.mb-4
+      .row.justify-content-center.align-items-center
+        .col-lg
+          .px-5
+            p.mb-0(data-aos="fade-up") #[strong El dibujo técnico tiene dos propósitos fundamentales: comunicación y documentación]. El propósito de comunicación radica en transmitir ideas y diseños de forma clara y precisa, facilitando la comprensión entre los involucrados. Por su parte, el propósito de documentación se enfoca en servir como un registro detallado de especificaciones y aspectos técnicos, asegurando la fidelidad en la creación y el mantenimiento de proyectos.
+        .col-lg-auto
+          figure
+            img(src='@/assets/curso/tema2/1.png', alt='')
 
 
-        .row.justify-content-center.align-items-center.mb-5
-          .col-lg-10
+    p(data-aos="fade-up") Un buen dibujo técnico debe cumplir con las siguientes características:
 
-            .bg-color-white.shadow-soft.py-4.px-lg-5
-              .row.justify-content-around.align-items-center
-                .col-md-auto
-                  img(src="@/assets/template/bg-icono-pdf.svg", style="width: 90px;")
-                .col
-                  .row.justify-content-between.align-items-center
-                    .col.mb-3.mb-sm-0
-                      h3.mb-1 Tipos de fuentes
-                      p Teniendo claras las diferencias en los tipos de fuentes, es importante profundizar qué contiene cada una de estas y para ello lo invitamos a consultar el PDF #[strong Tipos de fuentes]
-                    .col-sm-auto
-                      a.boton.color-acento-botones.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
-                        span Descargar
-                        i.fas.fa-arrow-right
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema2/2.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              h5 Precisión y exactitud
+              p La precisión y la exactitud son esenciales en el dibujo técnico para garantizar la correcta interpretación y construcción de un diseño. Un pequeño error en medidas o representaciones gráficas puede llevar a fallos estructurales, problemas en la producción o dificultades en la funcionalidad del producto final. Cada línea, ángulo y dimensión debe ser exacta para asegurar la integración y el funcionamiento adecuado de todas las partes del diseño, especialmente en campos como la ingeniería, arquitectura y diseño industrial, donde la seguridad es crucial. La precisión también facilita la comunicación clara entre los equipos involucrados en un proyecto.
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema2/3.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              h5 Representación en dos o tres dimensiones
+              p El dibujo técnico se emplea tanto en 2D como en 3D, ya que cada formato tiene funciones específicas y aporta diferentes perspectivas del objeto o proyecto. La representación en 2D es ideal para detalles y medidas precisas, mientras que el 3D es útil para visualizar el diseño final y comprender su integración en un entorno tridimensional, permitiendo una evaluación más completa del proyecto.
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema2/4.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              h5 Uso de símbolos y notaciones estandarizadas
+              p Los símbolos estandarizados en el dibujo técnico aseguran una interpretación uniforme de los planos, sin importar la ubicación geográfica o el idioma de los involucrados. Esto facilita la comunicación, reduce los errores y garantiza que los productos o estructuras se construyan según lo planificado. Sin estas normas, diferentes interpretaciones podrían generar resultados inconsistentes y un proceso caótico en la ejecución de proyectos.
 
 
+    .row.justify-content-center.align-items-stretch.mb-5
+      .col-lg-6.mb-4(data-aos="zoom-in-up")
+        .custom-image-card.h-100
+          img.custom-image-card__image(src="@/assets/curso/tema2/5.png" alt="")
+          .custom-image-card__text.p-4
+            h5.mb-2.text-center Dibujos en dos dimensiones (2D)
+            p.mb-0 Los dibujos en 2D son representaciones planas que se utilizan para ilustrar vistas específicas, como la vista frontal, lateral o superior. Esto permite comprender detalles y dimensiones exactas de cada componente. Son indispensables para la fabricación de piezas y la interpretación de los elementos individuales de un proyecto.
+      .col-lg-6.mb-4(data-aos="zoom-in-down")
+        .custom-image-card.h-100
+          img.custom-image-card__image(src="@/assets/curso/tema2/6.png" alt="")
+          .custom-image-card__text.p-4
+            h5.mb-2.text-center Dibujos en tres dimensiones (3D)
+            p.mb-0 Los dibujos en 3D proporcionan una visión más completa y realista del objeto, lo que facilita la comprensión de cómo se ensamblan las partes y cómo será el producto final. Este tipo de representación es útil para visualizar y anticipar posibles problemas de diseño antes de iniciar la fase de producción.
 
-    h2(data-aos="fade-up")#t_2_1 Factores desencadenantes de los conflictos
+    h2(data-aos="fade-up")#t_2_1 Uso de escalas y proporciones
+
+    p(data-aos="fade-up") El dibujo técnico recurre a escalas y proporciones para representar objetos con precisión y en un tamaño manejable. ¿Cómo sería intentar dibujar un edificio a su tamaño real en papel? ¡Sería impracticable! Las escalas permiten ajustar el tamaño del dibujo, manteniendo las proporciones correctas y facilitando su interpretación y uso en distintos contextos.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        .bg-color-2.p-4.mb-4(data-aos="fade-up")
+          p.mb-0 Las escalas permiten reducir o aumentar las dimensiones reales de un objeto mientras se mantienen las proporciones exactas. Esto facilita la comprensión y revisión de los planos sin perder ningún detalle importante. Por ejemplo, una escala de 1:100 indica que 1 unidad en el dibujo representa 100 unidades en la realidad, lo cual es útil para representar grandes estructuras de forma manejable.
+        p.mb-0(data-aos="fade-right") Mantener las proporciones correctas garantiza que todas las partes del objeto se relacionen de manera coherente, lo cual es fundamental para los procesos de fabricación, ensamblaje y construcción, asegurando que cada componente encaje adecuadamente en el diseño final.
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema2/7.png', alt='')
+
+    h2(data-aos="fade-up")#t_2_2 Incluir información sobre materiales y procesos
     
-    p(data-aos="fade-up") Los conflictos no surgen de manera aislada; son el resultado de tensiones acumuladas por una variedad de factores desencadenantes que afectan a individuos, grupos o sociedades. Estos factores pueden ser sociales, económicos, políticos y culturales, y cada uno juega un papel importante en la dinámica y evolución. 
+    p(data-aos="fade-up") #[strong El dibujo técnico debe proporcionar detalles precisos sobre los materiales y procesos necesarios para la correcta realización de un diseño]. Esta especificación asegura que la ejecución del proyecto se lleve a cabo conforme a lo planificado, permitiendo a los fabricantes y constructores seguir las indicaciones con precisión. Esto contribuye a que el producto final cumpla con las expectativas de #[strong funcionalidad y calidad].
 
-    p(data-aos="fade-up") A continuación, se exploran estos factores con ejemplos claros de cómo afecta la vida cotidiana:
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema2/8.png', alt='')
+      .col-lg-7
+        AcordionA(tipo="b")
+          .div(titulo="Materiales")
+            p Los materiales especificados en un dibujo técnico aseguran que las propiedades físicas y mecánicas del producto, como la resistencia, durabilidad y flexibilidad, sean las adecuadas. Esto es esencial para cumplir con los estándares de calidad y seguridad requeridos en cada proyecto, garantizando que el producto final tenga las características necesarias para su función.
 
-    .bg-full-width.bg-fondo-3.mb-5
+          .div(titulo="Procesos")
+            p Los procesos descritos en el dibujo técnico indican cómo debe fabricarse o ensamblarse el producto, incluyendo técnicas de fabricación, herramientas específicas y pasos secuenciales. Contar con esta información detallada ayuda a prevenir errores, reducir desperdicios y optimizar el tiempo de producción, similar a seguir una receta de cocina precisa, donde los ingredientes y el método exacto determinan el resultado final.
+  
+    p(data-aos="fade-up").mb-5 #[strong Los tipos de dibujo técnico según el contexto y su finalidad son:]
+
+    .bg-full-width.bg-fondo-slider.mb-5
       .p-4.p-md-5
         SlyderA(tipo="b").bg-white
           .row.p-4.px-md-5.py-lg-5.align-items-center
             .col-md-12.col-lg-7.mb-4.mb-md-0
-              h5 Factores sociales
-              p Desencadenan disputas cuando las relaciones entre individuos o grupos se ven afectadas por desigualdades, discriminación o exclusión social. La discriminación racial, la desigualdad de género y la exclusión de minorías, son ejemplos comunes de factores sociales que generan tensiones y malestar en una comunidad. Según Galtung (1996), estos tipos de desigualdades contribuyen a la violencia estructural, que impide que ciertos grupos accedan a los mismos derechos y oportunidades que los demás.
-
-              p Un ejemplo típico es la lucha por los derechos civiles de los grupos denominados minoría. La falta de acceso a oportunidades educativas y laborales, combinada con la discriminación sistémica, provoca tensiones entre los grupos marginados y la mayoría dominante. Esto se puede observar en las protestas contra la brutalidad policial y la discriminación racial, donde las comunidades buscan justicia y equidad en un sistema que las excluye.
-
+              h5 Dibujo arquitectónico
+              p Se utiliza para planificar y diseñar edificios y otras estructuras, incluyendo planos de plantas, elevaciones y secciones. Proporciona una visión detallada de cada aspecto de la construcción, permitiendo la correcta ejecución del proyecto.
             .d-none.d-lg-block.col-md-6.col-lg-4
               figure
-                img(src='@/assets/curso/tema2/5.png', alt='')
-          .row.p-4.px-md-5.py-lg-5.align-items-center
-            .col-md-12.col-lg-7.mb-4.mb-md-0
-              h5 Factores económicos
-              p Juegan un papel clave en el desencadenamiento de los conflictos, especialmente en sociedades en las que existe una marcada desigualdad en la distribución de los recursos. Cuando un grupo tiene acceso privilegiado a recursos esenciales como la tierra, el agua o el empleo, mientras que otros carecen de estas oportunidades, las tensiones aumentan inevitablemente. La falta de justicia económica, a menudo conduce a enfrentamientos entre quienes poseen y quienes no, creando divisiones profundas en la sociedad.
-              p Un conflicto económico recurrente entre los trabajadores y los empleadores, es cuando el primer grupo exige mejores salarios y condiciones laborales. Si los empleados sienten que no están siendo remunerados de manera justa o que no tienen acceso a oportunidades de promoción, las tensiones se convierten en huelgas o protestas laborales, como el aumento de huelgas en sectores como el transporte o la educación.
-            .d-none.d-lg-block.col-md-6.col-lg-4
-              figure
-                img(src='@/assets/curso/tema2/6.png', alt='')
+                img(src='@/assets/curso/tema2/9.png', alt='')
 
           .row.p-4.px-md-5.py-lg-5.align-items-center
             .col-md-12.col-lg-7.mb-4.mb-md-0
-              h5 Factores políticos
-              p Los factores políticos desencadenan enfrentamientos cuando las políticas gubernamentales, la distribución del poder o los procesos electorales son percibidos como injustos o corruptos. En muchos casos, las disputas políticas surgen de la lucha por el control del poder, ya sea dentro de un gobierno o entre diferentes facciones políticas. Las tensiones también pueden aumentar cuando un grupo percibe que sus derechos políticos son ignorados o violados, como ocurre en situaciones donde se restringen las libertades democráticas.
-              p Un conflicto político es el que surge durante un proceso electoral, cuando un partido o candidato alega fraude o manipulación de resultados. Esto puede generar protestas y choques violentos entre los partidarios de los diferentes candidatos.
+              h5 Dibujo de ingeniería
+              p Se divide en ramas como mecánica, eléctrica y civil. Cada rama se enfoca en los detalles técnicos específicos necesarios para la fabricación o construcción de proyectos en su campo, asegurando la viabilidad técnica de cada diseño.
             .d-none.d-lg-block.col-md-6.col-lg-4
               figure
-                img(src='@/assets/curso/tema2/7.png', alt='')
+                img(src='@/assets/curso/tema2/10.png', alt='')
 
           .row.p-4.px-md-5.py-lg-5.align-items-center
             .col-md-12.col-lg-7.mb-4.mb-md-0
-              h5 Factores culturales
-              p Se refieren a las tensiones que surgen entre grupos con diferentes valores, creencias, costumbres o religiones. La globalización ha intensificado los contactos entre culturas diversas, lo que puede ser positivo en términos de intercambio cultural, pero también puede generar peleas cuando un grupo percibe que su identidad o sus tradiciones están amenazadas por otro. 
-              p Según Lederach (2003), este factor, a menudo, surge cuando no se respeta la diversidad cultural o cuando un grupo intenta imponer sus creencias a otro.
-              p Un ejemplo es cuando las comunidades autóctonas luchan por preservar sus tradiciones frente a proyectos de desarrollo que amenazan su forma de vida. Por ejemplo, en muchos países, los pueblos indígenas han protestado contra la construcción de infraestructuras en sus tierras ancestrales, lo que ha generado luchas con los gobiernos y las empresas que promueven estos proyectos.
+              h5 Dibujo industrial
+              p Se especializa en la creación y representación de productos y maquinaria. Estos dibujos son fundamentales para la manufactura, ya que ofrecen detalles precisos sobre la forma, dimensiones y ensamblaje de las piezas, facilitando el proceso de producción.
             .d-none.d-lg-block.col-md-6.col-lg-4
               figure
-                img(src='@/assets/curso/tema2/8.png', alt='')
+                img(src='@/assets/curso/tema2/11.png', alt='')
 
-    .bg-color-2.mb-4
-      .row.justify-content-center.align-items-center
-        .col-lg-auto
-          figure
-            img(src='@/assets/curso/tema2/10.png', alt='')
-        .col-lg
-          .px-5
-            p.mb-0(data-aos="fade-up") Los conflictos no surgen de manera aislada, sino que son el resultado de una combinación de factores sociales, económicos, políticos y culturales. Comprender estos factores desencadenantes, permite identificar las raíces de los choques y abordarlos de manera más efectiva. Al reconocer las causas subyacentes, como la desigualdad económica, la discriminación social o las tensiones políticas, es posible desarrollar estrategias de resolución, que promuevan una paz positiva y contribuyan a la estabilidad social.
-      
-    .row.material-complementario.mt-5
-      h2 MATERIAL COMPLEMENTARIO
-      .col-12.col-md-6.col-lg-7
-        p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Peña, G. E. G. (2021). Las fuentes del derecho. Lecciones de introducción al derecho, 189
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Suárez, E. (2020). Introducción al derecho. Ediciones UNL
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span De Sousa, M. T. (2019). Introducción al derecho. Temis 
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Nieto, A. (2019). Una introducción al derecho.
-      .col-12.col-md-6.col-lg-3.offset-lg-1
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              h5 Dibujo topográfico
+              p Representa las características del terreno, siendo esencial para la planificación de proyectos de ingeniería civil y arquitectura. Permite comprender la geografía del área de desarrollo, facilitando la adaptación del proyecto al entorno natural.
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema2/12.png', alt='')
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              h5 Dibujo urbano
+              p Se utiliza para la planificación de ciudades y comunidades, mostrando el diseño de calles, parques y otras infraestructuras. Es clave para el desarrollo de entornos urbanos, garantizando una disposición funcional y coherente de los espacios.
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema2/13.png', alt='')
+
+    p(data-aos="fade-up").mb-5 #[strong Los tipos de dibujo técnico según el contexto y su finalidad son:]
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        AcordionA(tipo="b")
+          .div(titulo="Formato")
+            p Se refiere al tamaño estandarizado del papel en el que se desarrolla el plano o en el que se desea imprimir, asegurando uniformidad en la presentación.
+
+          .div(titulo="Márgenes")
+            p Delimitan el área dentro del formato donde se disponen los elementos del plano técnico, estableciendo un marco para la correcta disposición del contenido.
+
+          .div(titulo="Rótulo")
+            p Espacio en el plano destinado a información relevante del proyecto, como el número de plano, la escala, la persona que lo dibujó y quien lo revisó, entre otros datos necesarios para la identificación del plano.
+          
+          .div(titulo="Líneas")
+            p Diferentes tipos de líneas (continuas, discontinuas, de centro) que indican diversos aspectos del diseño, como contornos, ejes o límites ocultos.
+          
+          .div(titulo="Simbología")
+            p Uso de símbolos estandarizados para representar componentes, materiales y procesos, facilitando la interpretación del plano sin ambigüedades.
+      .col-lg-5
         figure
-          img(src='@/assets/componentes/material-complementario.svg', alt='')
+          img(src='@/assets/curso/tema2/14.png', alt='')
 
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema2/15.png', alt='')
+      .col-lg-7
+        AcordionA(tipo="b")
+          .div(titulo="Proyección ortogonal")
+            p Se refiere al tamaño estandarizado del papel en el que se desarrolla el plano o en el que se desea imprimir, asegurando uniformidad en la presentación.
+
+          .div(titulo="Proyección isométrica")
+            p Representación tridimensional en dos dimensiones, mostrando tres caras de un objeto, lo que facilita la visualización del volumen y la forma.
+
+          .div(titulo="Dimensiones")
+            p Especificación precisa de las medidas para cada componente del diseño, asegurando que las piezas se ajusten correctamente durante la fabricación o ensamblaje.
+          
+          .div(titulo="Anotaciones")
+            p Notas y detalles adicionales que complementan la información del dibujo, como tolerancias y materiales, proporcionando datos importantes para la correcta interpretación del plano.
+
+    h2(data-aos="fade-up")#t_2_3 Aplicaciones del dibujo técnico
+
+    p(data-aos="fade-up") Dependiendo del área de aplicación, el dibujo técnico se emplea en:
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        .bg-color-3.p-4.mb-2(v-for="item in items" :key="item.text" data-aos="fade-up")
+          .row.justify-content-center.align-items-center
+            .col-lg-auto
+              figure
+                img(src='@/assets/bullets/icon-1.svg' alt='')
+            .col-lg
+              p.mb-0 {{ item.text }}
+
+
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema2/16.png', alt='')
+
+
+    h2(data-aos="fade-up")#t_2_4 Herramientas y software
+
+    p(data-aos="fade-up") Un plano técnico se puede crear tanto con herramientas de trazado manual como con programas digitales de dibujo técnico. 
+
+    .row.justify-content-center.align-items-stretch.mb-5
+      .col-lg-6.mb-4(data-aos="zoom-in-up")
+        .custom-image-card.h-100
+          img.custom-image-card__image(src="@/assets/curso/tema2/17.png" alt="")
+          .custom-image-card__text.p-4
+            h5.mb-2.text-center Herramientas para dibujo técnico por trazado manual
+            p.mb-0 Las herramientas de trazado manual son esenciales para lograr precisión en el dibujo técnico sin la ayuda de software. Algunas de las principales incluyen: lápices, compás, regla, escuadra y transportador.
+      .col-lg-6.mb-4(data-aos="zoom-in-down")
+        .custom-image-card.h-100
+          img.custom-image-card__image(src="@/assets/curso/tema2/18.png" alt="")
+          .custom-image-card__text.p-4
+            h5.mb-2.text-center Software de dibujo
+            p.mb-0 Programas como AutoCAD y SolidWorks, que facilitan la creación y modificación de dibujos. Es importante destacar que para realizar un plano técnico con estas herramientas informáticas es fundamental contar con conocimientos tanto del manejo del software como de los conceptos de dibujo técnico.
+
+    .bg-full-width.bg-color-4.border-top.color-primario
+      .px-4.p-md-5
+        .row.justify-content-center.align-items-center
+          .col-lg-7
+            h2.mb-4(data-aos="flip-up") ¿Sabía que el dibujo industrial debe cumplir con normas específicas para garantizar la claridad y precisión en su interpretación? 
+            p.mb-4(data-aos="fade-right") Las normas de dibujo industrial, como las establecidas por ISO, DIN y ANSI, son fundamentales para asegurar que los planos técnicos puedan ser comprendidos de manera uniforme, sin importar la profesión, idioma o ubicación geográfica de quien los consulte. Estas normas estandarizan elementos clave de los dibujos técnicos, como las líneas, vistas, acotaciones, escalas y simbología. En las tablas incluidas, se detalla la relevancia de estos estándares internacionales, así como las Normas Técnicas Colombianas (NTC), que aseguran la uniformidad en la representación técnica dentro de Colombia. Los invitamos a profundizar en el siguiente documento y comprender cómo estas regulaciones contribuyen a la consistencia y calidad de los procesos técnicos a nivel global.  
+
+            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")(data-aos="flip-up")
+              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
+                img(src="@/assets/template/icono-pdf.svg")
+              .anexo__texto
+                p <strong>Anexo. </strong> Normas de dibujo industrial
+
+          .col-lg-5.d-none.d-lg-block
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/19.png', alt='')
 </template>
 
 <script>
@@ -141,6 +239,19 @@ export default {
   components: {
     BannerInterno,
   },
+  data() {
+    return {
+      items: [
+        { text: 'Ingeniería mecánica, eléctrica, entre otras.' },
+        { text: 'Diseño de productos y embalajes.' },
+        { text: 'Fabricación y producción.' },
+        { text: 'Educación y capacitación técnica.' },
+        { text: 'Investigación y desarrollo.' },
+        { text: 'Industria manufacturera.' },
+        { text: 'Arquitectura y construcción.' },
+      ],
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -149,52 +260,4 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.download-card
-  display: flex
-  justify-content: space-between
-  align-items: center
-  border-radius: 0px
-  background-color: #fff
-
-  &__content
-    display: flex
-    align-items: center
-    gap: 1rem
-    flex: 1
-
-  &__text
-    flex: 1
-
-  &__action
-    margin-left: 1rem
-
-  .download-btn
-    display: inline-flex
-    align-items: center
-    padding: 0.5rem 1rem
-    background-color: #1172B3
-    color: white
-    border-radius: 0px
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
-
-    &:hover
-      opacity: 0.9
-
-.pdf-icon
-  width: 90px
-  min-width: 90px
-  display: flex
-  align-items: center
-  justify-content: center
-
-  img
-    width: 100%
-    height: auto
-    display: block
-
-a.bg-ppal-azul-primary
-  transition: opacity 0.3s ease
-  &:hover
-    opacity: 0.9
-</style>
+<style lang="sass"></style>

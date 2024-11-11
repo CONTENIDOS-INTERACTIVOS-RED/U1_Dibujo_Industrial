@@ -20,11 +20,11 @@
           //- Columna derecha con información
           .col-xl-7.info-section
             .content-wrapper.px-lg-4.pt-lg-4.px-xl-5.py-xl-5.text-start
-              p.home-main-title Desarrollo Físico y Motor en Niños y Adolescentes
-              h1.home-title.mb-4.text-uppercase Desarrollo y Ciclo Vital: Niños y Adolescentes
-              p.descripcion.mb-4 Esta unidad, Desarrollo Físico y Motor en Niños y Adolescentes, explora los cambios corporales y habilidades motrices clave desde la niñez hasta la adolescencia. Los estudiantes comprenderán cómo factores como genética, nutrición y entorno influyen en el crecimiento y las transformaciones hormonales de la pubertad, lo cual les permitirá apoyar a los jóvenes en cada etapa de su desarrollo.
+              p.home-main-title DIBUJO INDUSTRIAL
+              h1.home-title.mb-4.text-uppercase Fundamentos del dibujo técnico
+              p.descripcion.mb-4 La unidad 1, fundamentos del dibujo técnico, explora los principios básicos, historia, normativas y aplicaciones del dibujo técnico. Aborda conceptos clave como tipos de líneas, proyecciones ortogonales y uso de escalas, asegurando precisión en los diseños. Los estudiantes practican con ejercicios aplicando herramientas CAD y normas ISO, DIN y ANSI para una comunicación gráfica efectiva en ingeniería y diseño.
 
-              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡El éxito está en cada esfuerzo que haces hoy!
+              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡Diseña con precisión, comunica con claridad y construye el futuro con cada trazo¡
 
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")

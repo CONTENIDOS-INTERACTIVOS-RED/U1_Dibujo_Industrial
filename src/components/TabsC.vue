@@ -2,7 +2,7 @@
 .tabs-c
   .tabs-c__header
     .row.m-0
-      .col-sm-6.col-lg-4.col-xl.tabs-c__tab.py-3(
+      .col-sm-6.col-lg.col-xl.tabs-c__tab.py-3(
         v-for="(elm,index) of elements"
         :key="'tabs-c-menu-'+elm.id"
         :class="{'tabs-c__tab--active' : selected === elm.id}"
