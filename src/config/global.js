@@ -35,16 +35,8 @@ export default {
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
         numero: '1.',
-        titulo: 'Conceptos de paz y cultura de paz',
+        titulo: 'Fundamentos de Dibujo Técnico',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.1',
-            titulo: 'Fundamentos de Dibujo Técnico',
-            hash: 't_1_1',
-          },
-        ],
       },
       {
         nombreRuta: 'tema2',
