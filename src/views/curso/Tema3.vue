@@ -28,6 +28,33 @@
                 h5.text-center.mb-4 Línea de centro
                 p.text-center Indica ejes de simetría y centros de círculos. Ejemplo: ejes de rotación.
 
+
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/10.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de cota (o dimensión)
+                p.text-center Muestra medidas y dimensiones, incluye flechas y textos explicativos. Ejemplo: longitudes, diámetros y alturas.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/11.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de sección
+                p.text-center Indica la línea de corte en un dibujo en sección, representada con una línea gruesa. Ejemplo: cortes realizados para mostrar el interior de un objeto.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/12.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de proyección
+                p.text-center Indica la dirección de las proyecciones en un plano. Ejemplo: líneas que muestran cómo se proyectan las vistas ortogonales
+
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/13.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de sombra
+                p.text-center Representa áreas sombreadas en un dibujo, ayudando a visualizar la tridimensionalidad. Ejemplo: sombras en vistas isométricas.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/14.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de indicador
+                p.text-center Señala características adicionales o direcciones. Ejemplo: flechas que indican movimientos o flujos.
+              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
+                img(src='@/assets/curso/tema3/15.png' alt='AvatarTop').mx-auto.mb-4
+                h5.text-center.mb-4 Línea de esbozo
+                p.text-center Contornos preliminares y bocetos, generalmente más ligeras. Ejemplo: esbozos iniciales de un diseño.
+
     h2(data-aos="fade-up")#t_3_2 Proyecciones ortogonales
 
     .row.justify-content-center.align-items-center.mb-5
@@ -145,40 +172,45 @@
         .bg-color-4.p-4.mt-4
           h5 Ejemplo práctico
           p Para conocer sobre la aplicación de proyecciones ortogonales lo invitamos a consultar el PDF ejemplo práctico.
-          a.anexo.bg-white.w-fit(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")(data-aos="flip-up")
+          a.anexo.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")(data-aos="flip-up")
               .anexo__icono(:style="{'background-color': '#FCDFDB'}")
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
                 p <strong>Anexo. </strong> Ejemplo práctico
 
 
-    .row.material-complementario
-      h2 MATERIAL COMPLEMENTARIO
-      .col-12.col-md-6.col-lg-7
-        p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Peña, G. E. G. (2021). Las fuentes del derecho. Lecciones de introducción al derecho, 189
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Suárez, E. (2020). Introducción al derecho. Ediciones UNL
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span De Sousa, M. T. (2019). Introducción al derecho. Temis 
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Nieto, A. (2019). Una introducción al derecho.
-      .col-12.col-md-6.col-lg-3.offset-lg-1
-        figure
-          img(src='@/assets/componentes/material-complementario.svg', alt='')
+
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
+    .bg-full-width.border-top.color-primario
+      .p-4.p-md-5
+        h2 MATERIAL COMPLEMENTARIO
+        .row.material-complementario
+          .col-12.col-md-6.col-lg-7
+            p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/221321" target="_blank" rel="noopener noreferrer") Ayllón, F. (2022) Elementos básicos de dibujo técnico I: libro de apoyo. Grupo Editorial Éxodo
+
+            //- Referencia de youtube 
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/5BBL9HG1Wes?si=oXB0FSXtwIpHFYNM" target="_blank" rel="noopener noreferrer") Cecilia Inchauste. (22 de noviembre de 2019) Metodología de trazado de las vistas. 
+
+          .col-12.col-md-6.col-lg-3.offset-lg-1
+            figure
+              img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
   name: 'Tema3',
   components: {
-    BannerInterno,
+    Actividad,
   },
   data() {
     return {
@@ -196,6 +228,204 @@ export default {
             '<b>Estándar.</b> Facilitan la comunicación entre ingenieros, arquitectos y fabricantes.',
         },
       ],
+      cuestionario: {
+        tema: 'Sistemas numéricos y álgebra de Boole',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto: '¿Para qué se utilizan las proyecciones ortogonales?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Para ver un objeto desde una sola perspectiva',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Para representar un objeto en diferentes vistas bidimensionales',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Para sombrear el objeto',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Para mostrar únicamente su vista frontal',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué herramienta facilita la medición de dibujos a diferentes escalas?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Compás',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Escalímetro',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Transportador',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Lápiz técnico',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto: '¿Qué significa una escala 2:1 en un dibujo técnico?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'El objeto se representa al doble de su tamaño real',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto: 'El objeto se reduce a la mitad de su tamaño real',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'El objeto se representa al mismo tamaño',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'El objeto se representa 1:2',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Qué método de proyección se utiliza más comúnmente en Europa y Asia?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Tercer ángulo (ISO-A)',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Primer ángulo (ISO-E)',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Cuarto ángulo',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Segundo ángulo',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Qué norma regula los símbolos para soldadura en el dibujo técnico?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'ANSI Y14.2',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'ANSI Y14.5',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'ANSI Y14.24',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'ANSI Y14.36',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 6,
+            texto:
+              '¿Qué tipo de línea se utiliza para señalar características adicionales o direcciones?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Línea de proyección',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Línea de esbozo',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Línea de centro',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Línea de indicador',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
     }
   },
   mounted() {
@@ -206,8 +436,4 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.material-complementario
-  padding-top: 3rem
-  border-top: 9px solid $color-sistema-e
-</style>
+<style lang="sass"></style>

@@ -162,15 +162,27 @@ export default {
   },
   referencias: [
     {
-      referencia: 'Méndez, G. (2017). Dibujo Técnico.',
-      link:
-        'https://teoriadeldibujotecnico.wordpress.com/2017/08/09/vistas-de-un-objeto/',
+      referencia:
+        'García E. (2020) Dibujo Técnico. AENOR - Asociación Española de Normalización y Certificación',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/128456',
     },
     {
       referencia:
-        'Universidad Nacional de San Juan. (2020). Dibujo y sistemas de representación. ',
-      link:
-        'https://dibujoysistemas.fi.unsj.edu.ar/wp-content/uploads/08-UVIII-VISTAS-AUXILIARES-CIV-2020.pdf',
+        'Pardo P. (2018). Axonometría ortogonal y oblicua. Editorial de la Universidad Politécnica de Valencia',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/57449',
+    },
+    {
+      referencia: 'Zarraonandia, I. Dibujo técnico',
+      link: 'https://ibiguridt.wordpress.com/',
+    },
+    {
+      referencia:
+        'Escuela de dibujo Asin. (14 de abril de 2023) Normas DIN, UNE e ISO',
+      link: 'https://dibujotecnicoacin.com/normas-din-une-e-iso/',
+    },
+    {
+      referencia: 'Zarraonandia, I. Dibujo técnico. Proyecciones',
+      link: 'https://dibujotecnicoacin.com/normas-din-une-e-iso/',
     },
   ],
   glosario: [
@@ -234,7 +246,7 @@ export default {
         'representaciones gráficas convencionales que facilitan la interpretación universal de los planos.',
     },
     {
-      termino: 'Software CAD',
+      termino: '<em>Software</em> CAD',
       significado:
         'programas de diseño asistido por computadora utilizados para crear y modificar dibujos técnicos',
     },

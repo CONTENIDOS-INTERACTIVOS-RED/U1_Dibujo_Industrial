@@ -3,7 +3,8 @@
     BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'SINTESIS'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       
-      p(data-aos="fade-up").mb-5 Esta unidad presenta los conceptos básicos del dibujo técnico, una herramienta fundamental para comunicar y documentar proyectos en ingeniería y diseño. Se exploran elementos esenciales como tipos de líneas, proyecciones, escalas y normas internacionales (ISO, ANSI, DIN) que garantizan precisión y coherencia en la representación gráfica de objetos y sistemas.
+      p(data-aos="fade-up").mb-5 En esta unidad, se abordan los fundamentos del dibujo técnico, una representación gráfica de objetos y sistemas esencial para la comunicación visual en la ingeniería y otras disciplinas técnicas. Sus principales propósitos son la comunicación, al transmitir ideas de manera clara, y la documentación, al registrar especificaciones técnicas.
+
 
       .row.justify-content-center
         .col-lg-12.mb-5

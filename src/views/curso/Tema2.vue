@@ -164,7 +164,7 @@
       .col-lg-7
         AcordionA(tipo="b")
           .div(titulo="Proyección ortogonal")
-            p Se refiere al tamaño estandarizado del papel en el que se desarrolla el plano o en el que se desea imprimir, asegurando uniformidad en la presentación.
+            p Representa un objeto mediante múltiples vistas (frontal, lateral y superior), ofreciendo una visión detallada de cada cara del diseño.
 
           .div(titulo="Proyección isométrica")
             p Representación tridimensional en dos dimensiones, mostrando tres caras de un objeto, lo que facilita la visualización del volumen y la forma.
@@ -220,7 +220,7 @@
             h2.mb-4(data-aos="flip-up") ¿Sabía que el dibujo industrial debe cumplir con normas específicas para garantizar la claridad y precisión en su interpretación? 
             p.mb-4(data-aos="fade-right") Las normas de dibujo industrial, como las establecidas por ISO, DIN y ANSI, son fundamentales para asegurar que los planos técnicos puedan ser comprendidos de manera uniforme, sin importar la profesión, idioma o ubicación geográfica de quien los consulte. Estas normas estandarizan elementos clave de los dibujos técnicos, como las líneas, vistas, acotaciones, escalas y simbología. En las tablas incluidas, se detalla la relevancia de estos estándares internacionales, así como las Normas Técnicas Colombianas (NTC), que aseguran la uniformidad en la representación técnica dentro de Colombia. Los invitamos a profundizar en el siguiente documento y comprender cómo estas regulaciones contribuyen a la consistencia y calidad de los procesos técnicos a nivel global.  
 
-            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")(data-aos="flip-up")
+            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
               .anexo__icono(:style="{'background-color': '#FCDFDB'}")
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
@@ -229,6 +229,23 @@
           .col-lg-5.d-none.d-lg-block
             figure(data-aos="zoom-in")
               img(src='@/assets/curso/tema2/19.png', alt='')
+
+
+    .bg-full-width.border-top.color-primario
+      .p-4.p-md-5
+        h2 MATERIAL COMPLEMENTARIO
+        .row.material-complementario
+          .col-12.col-md-6.col-lg-7
+            p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+
+            //- Referencia de youtube 
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/_AlVcvwTMxs?si=ks_6aCmOUXCCSIQI" target="_blank" rel="noopener noreferrer") Luis Enrique Escobar Tafur. (8 de julio de 2011) Normalización Dibujo Técnico OVA.wmv. 
+
+          .col-12.col-md-6.col-lg-3.offset-lg-1
+            figure
+              img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>

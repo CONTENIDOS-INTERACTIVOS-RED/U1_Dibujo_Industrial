@@ -57,6 +57,24 @@
                 .col-lg-6
                   figure
                     img(src='@/assets/curso/tema1/7.png', alt='')
+
+    .bg-full-width.border-top.color-primario
+      .p-4.p-md-5
+        h2 MATERIAL COMPLEMENTARIO
+        .row.material-complementario
+          .col-12.col-md-6.col-lg-7
+            p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/128620" target="_blank" rel="noopener noreferrer") Martinez,O. (2013) Fundamentos de Dibujo Técnico I: basado en competencias (3a. ed.). Grupo Editorial Exodo. 
+
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://open.spotify.com/episode/3JugehCqVNKRgDPscL4k4f?si=vMvDMx2GRpGwsc67Jm69LQ&t=24" target="_blank" rel="noopener noreferrer") Dibujo Técnico. (21 de mayo de 2021) Dibujo Técnico. [Podcast]. Spotify. 
+
+          .col-12.col-md-6.col-lg-3.offset-lg-1
+            figure
+              img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
