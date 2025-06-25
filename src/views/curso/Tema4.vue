@@ -1,6 +1,6 @@
 <template lang="pug">
   .curso-main-container.pb-3
-    BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'SINTESIS'")
+    BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'SÍNTESIS'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       
       p(data-aos="fade-up").mb-5 En esta unidad, se abordan los fundamentos del dibujo técnico, una representación gráfica de objetos y sistemas esencial para la comunicación visual en la ingeniería y otras disciplinas técnicas. Sus principales propósitos son la comunicación, al transmitir ideas de manera clara, y la documentación, al registrar especificaciones técnicas.
